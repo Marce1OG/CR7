@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #e6f0f3; /* Light football field background */
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/football-pitch.jpg') center/cover no-repeat; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fffdfd;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  position: relative;
+  background-image: url('img/CR7.jpg');
+}
+
+.hero-content {
+  margin-top: 200px;
+  text-align: center;
+  max-width: 600px;
+  z-index: 2;
+}
+
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2906f3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: #0c5cf0;
+  color: #fff;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: #d35400;
+}
+
+/* Shirt Cards Section */
+.shirts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.shirt-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #f39c12; /* Border for football theme */
+}
+
+.shirt-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.shirt-card img {
+  width: 100%;
+  height: auto;
+}
+
+.shirt-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.shirt-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.shirt-info p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #777;
+}
+
+.shirt-info button {
+  background: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shirt-info button:hover {
+  background: #d35400;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #333;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+  }
+
+  .shirts-container {
+    padding: 2rem 1rem;
+  }
+
+  .shirt-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .shirt-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .shirt-info p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .shirts-container {
+    grid-template-columns: 1fr;
+  }
+
+  .shirt-card {
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .shirt-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .shirt-info p {
+    font-size: 0.8rem;
+  }
+}
